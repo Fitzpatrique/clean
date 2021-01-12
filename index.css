@@ -1,0 +1,462 @@
+body{
+	margin: -0.5rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+span{
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	color: #143774;
+	margin-top: -2rem;
+	margin-left: -0.5rem;
+	font-size: 30px;
+}
+
+h4 a{
+	color: #ffffff;
+}
+
+
+.subtitle{
+	color: #707070;
+	font-weight: bold;
+	margin: -0.5rem;
+
+}
+
+.card-title{
+	color: #707070;
+	font-weight: bold;
+	margin: 0;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+.btn{
+	background-color: orange;
+	width: 100%;
+	padding: 1rem 0;
+	text-align: center;
+	border-radius: 50px;
+	text-decoration: none;
+}
+
+.site-logo{
+	margin-top: -0.5rem;
+	margin-left: -1.2rem;
+}
+
+
+.container0{
+	display: flex;
+	margin: 1rem 3%;
+}
+
+.container1{
+	display: flex;
+	margin: 1rem 3%;
+}
+
+.container2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.container3{
+	display: flex;
+	margin: 1rem 3%;
+	justify-content: space-between;
+}
+
+.contact-sm{
+	display: none;
+}
+
+.contact-lg{
+	display: flex;
+	color: #707070;
+	background-color: #f8f8f8;
+	padding: 0;
+	margin-left: 2rem;
+	justify-content: space-between;
+}
+
+.client-name{
+	text-align: center;
+	padding: 2rem;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #707070;
+}
+
+.client{
+	text-align: center;
+	color: #1792d2 ;
+	padding: 2rem;
+	font-size: 18px;
+	background-color: #707070;
+}
+
+.comment{
+	text-align: center;
+	padding: 2rem 2rem 6rem 2rem;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #707070;
+}
+
+.images{
+	display: flex;
+	flex-direction: row;
+	padding: 0.6rem 2rem 0 2rem;
+	justify-content: flex-end;
+}
+
+.mb{
+	display: none;
+}
+
+.contimg{
+	padding-left: 2rem;
+}
+
+.card{
+	width: 30%;
+}
+
+.overlay{
+	display: none;
+}
+
+.menu{
+	display: none;
+}
+
+#slider{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 0;
+  padding: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+  opacity: 30%;
+  border: none;
+
+}
+
+.prev{
+	margin-left: 5%; 
+}
+
+/* Position the "next button" to the right */
+.next {
+	margin-right: 8%;
+ 	right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+button{
+	height: 40px;
+	width: 40px;
+	font-weight: 900;
+}
+
+header{
+
+	background-color: #f8f8f8;
+	padding: 0.5em 2rem;
+	margin: 0 ;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 2px 2px 4px #e2e2e2;
+
+	
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+}
+
+nav li{
+	margin-bottom: -4rem;
+	margin-top: 0.5rem;
+	padding-left: 4rem;
+
+}
+
+a{
+	text-decoration: none;
+	color: #707070;
+	font-weight: 700;
+	margin-top: 1.5rem;
+}
+
+a:hover{
+	color: #1792d2;
+}
+
+@media (max-width: 768px){
+
+	body{
+		margin: 0;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	span{
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: #143774;
+		margin: 0;
+		margin: -0.5rem;
+	}
+
+	header{
+	display: flex;
+	background-color: transparent;
+	box-shadow: none;
+
+	
+}
+
+		/* Next & previous buttons */
+	.prev, .next {
+	  
+	  position: absolute;
+	  top: 30%;
+	  width: auto;
+	  margin-top: 0;
+	  padding: 6%;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  background-color: black;
+	  opacity: 30%;
+	  border: none;
+	  z-index: 0;
+	  
+	}
+
+	.prev{
+		margin-left: 3%; 
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+		margin-right: 8%;
+	 	right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	.subtitle{
+		color: #707070;
+		font-weight: bold;
+		margin: -0.5rem auto;
+		text-align: center;
+	}
+
+	.mb{
+		display: flex;
+		color: transparent;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.site-logo{
+		margin-top:  -0.5rem;
+		margin-left: 0;
+		position: fixed;
+		background-color: #f8f8f8;
+		padding: 0.5rem 100% 1rem 100%;
+		box-shadow: 2px 2px 4px #707070;
+		z-index: 4;
+		justify-content: center;
+	}
+
+	.container0{
+		display: flex;
+		margin: 0 0;
+		width: 100%;
+		justify-content: space-around;
+		justify-content: center;
+		
+	}
+
+	.container1{
+	display: flex;
+	margin: 1rem 1rem;
+	}
+
+	.container3{
+	display: block;
+	margin-left: 1rem; 
+	}
+
+	.contact-sm{
+		display: block;
+		background-color: #707070;
+		color: #ffffff;
+		text-align: center;
+		padding: 2rem;
+	}
+
+	.contact-lg{
+		display: none;
+	}
+
+	.comment{
+	text-align: center;
+	padding: 2rem;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #707070;
+}
+
+	.card{
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	
+	nav ul{
+		display: none;
+	}
+
+	a{
+		text-decoration: none;
+		color: #707070;
+	}
+
+	.menu{
+		position: fixed;
+		display: flex;
+		margin-left: -1em;
+		margin-top: 0.4rem;
+		margin-right: 0;
+		z-index: 5; 
+	}
+
+	/* The Overlay (background) */
+	.overlay {
+	  /* Height & width depends on how you want to reveal the overlay (see JS below) */  
+	  display: flex; 
+	  height: 100%;
+	  width: 0;
+	  position: fixed; /* Stay in place */
+	  z-index: 9; /* Sit on top */
+	  left: 0;
+	  top: 0;
+	  background-color: rgb(0,0,0); /* Black fallback color */
+	  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+	  overflow-x: hidden; /* Disable horizontal scroll */
+	  overflow-y: hidden;
+	  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+	  position: relative;
+	  top: 25%; /* 25% from the top */
+	  width: 100%; /* 100% width */
+	  text-align: center; /* Centered text/links */
+	  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	}
+
+	/* The navigation links inside the overlay */
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block; /* Display block instead of inline */
+	  transition: 0.3s; /* Transition effects on hover (color) */
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay a:hover, .overlay a:focus {
+	  color: #f1f1f1;
+	}
+
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 60px;
+	}
+
+	
+
+
+	/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+	@media screen and (max-height: 450px) {
+	  .overlay a {font-size: 20px}
+	  .overlay .closebtn {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	  }
+	}
+
+	
+
+}
+
+
